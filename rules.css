@@ -1,0 +1,232 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Giger;
+  src: url(font/ofont.ru_Giger.ttf);
+}
+@font-face {
+  font-family: Patsy Sans;
+  src: url(font/ofont.ru_Patsy\ Sans.otf);
+}
+@font-face {
+  font-family: K2D;
+  src: url(font/K2D-Medium.ttf);
+}
+@font-face {
+  font-family: K2D Bold;
+  src: url(font/K2D-Bold.ttf);
+}
+@font-face {
+  font-family: K2D Italic;
+  src: url(font/K2D-Italic.ttf);
+}
+body {
+  font-family: "PT Serif", serif;
+}
+
+.container {
+  width: calc(100% - 50px - 50px);
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  min-height: 270px;
+  align-items: center;
+}
+header .header-background {
+  background-image: url("photo/header.jpg");
+  width: 100%;
+  min-height: 115px;
+  display: flex;
+  align-items: center;
+}
+header .header-background .header-logo {
+  width: 70px;
+  height: 63px;
+}
+header .header-background .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+header .header-background .header-content .header-top {
+  font-family: Patsy Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  font-size: 40px;
+}
+header .header-background .header-content .header-top a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+header .header-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-bottom ul {
+  display: flex;
+  gap: 210px;
+}
+header .header-bottom ul li .dot {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+header .header-bottom ul li hr {
+  width: 35px;
+  transform: rotate(90deg);
+  padding-top: 15px;
+  border: none;
+  border-bottom: 2px solid #000;
+}
+header .header-bottom ul li a {
+  color: black;
+  text-decoration: none;
+  font-family: Patsy Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  font-size: 32px;
+}
+header .header-bottom ul li a button {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  background-color: #000;
+  border: none;
+}
+
+main .rules {
+  text-align: center;
+  width: 100%;
+  height: 30px;
+}
+main #mce-edit-area {
+  resize: none;
+}
+main .h1 {
+  text-align: center;
+  width: 100%;
+  height: 200px;
+}
+main .h1 h {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 100px;
+  font-family: Patsy Sans;
+}
+main .base {
+  height: 1118px;
+  width: 70%;
+  margin: auto;
+  border: solid;
+  border-radius: 174px;
+  background-color: #D9D9D9;
+  padding-top: 0px;
+}
+main .base .up {
+  width: 100%;
+  height: 200px;
+  border: solid;
+  border-radius: 174px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+}
+main .base .up h1 {
+  margin-top: 40px;
+  font-size: 54px;
+}
+main .base .center {
+  max-width: 60%;
+  height: 156px;
+  border-radius: 180px;
+  border: solid;
+  margin: auto;
+  margin-top: 186px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+}
+main .base .center select {
+  width: 140px;
+  height: 45px;
+  padding: 4px;
+  border-radius: 4px;
+  background: #eee;
+  border: none;
+  outline: none;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+main .base .center #selectdonat {
+  margin-top: 50px;
+  color: white;
+  background-color: #000;
+  border-radius: 4px;
+  font-size: 30px;
+  width: 50%;
+  text-align: center;
+}
+main .base .center #selectdonat option {
+  padding: 5px;
+}
+main .base .center #selectdonat::-ms-expand {
+  display: none;
+}
+main .base .center #selectdonat::after {
+  content: "▾";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+main .base .center h1 {
+  margin-top: 50px;
+  font-size: 38px;
+}
+main .base #price {
+  margin: auto;
+  text-align: center;
+  margin-top: 179px;
+  margin-bottom: 50px;
+  font-family: Patsy Sans;
+  font-size: 20px;
+}
+main .base .input {
+  margin: auto;
+  justify-content: space-between;
+  text-align: center;
+}
+main .base .input input {
+  width: 60%;
+  height: 70px;
+  border-radius: 180px;
+  font-size: 20px;
+  text-align: center;
+}
+main .base .input .button {
+  width: 41%;
+  font-size: 45px;
+  padding: 10px;
+  margin-top: 40px;
+  color: white;
+  background-color: #000;
+  padding-bottom: 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=rules.css.map */

@@ -1,0 +1,170 @@
+$font: 'PT Serif', serif;
+
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Giger;
+    src: url(font/ofont.ru_Giger.ttf);
+}
+
+@font-face {
+    font-family: Patsy Sans;
+    src: url(font/ofont.ru_Patsy\ Sans.otf);
+}
+
+@font-face {
+    font-family: K2D;
+    src: url(font/K2D-Medium.ttf);
+}
+@font-face {
+    font-family: K2D Bold;
+    src: url(font/K2D-Bold.ttf);
+}
+@font-face {
+    font-family: K2D Italic;
+    src: url(font/K2D-Italic.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    font-family: 'PT Serif', serif;
+}
+.container{
+    width: calc(100% - 50px - 50px);
+    margin: 0 auto;
+}
+
+// header
+header{
+    width: 100%;
+    min-height: 270px;
+    align-items: center;
+    .header-background{
+        background-image: url('photo/header.jpg');
+        width: 100%;
+        min-height: 115px;
+        display: flex;
+        align-items: center;
+    
+    .header-logo{
+        width: 70px;
+        height: 63px;
+    }
+    .header-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        .header-top{
+            font-family: Patsy Sans;
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            font-size: 40px;
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+        }
+        } 
+    }
+}
+
+    // .header-bottom-content{
+
+    // }
+    .header-bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul{
+            display: flex;
+            gap: 210px;
+            li{
+                .dot{
+                    text-decoration-line: underline;
+                    text-decoration-style: solid;
+                }
+                hr{
+                    width: 35px;
+                    transform: rotate(90deg);
+                    padding-top:15px;
+                    border: none;
+	                border-bottom: 2px solid #000;
+                }
+                a{
+                    color: black;
+                    text-decoration: none;
+                    font-family: Patsy Sans;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-display: swap;
+                    font-size: 32px;
+                
+                button{
+                    border-radius: 10px;
+                    font-size: 20px;
+                    padding: 10px;
+                    color: white;
+                    background-color: #000;
+                    border: none;
+                }
+            }
+            }
+        }
+        
+    }
+    
+}
+main{
+    .h1{
+        text-align: center;
+        width: 100%;
+        height: 200px;
+        
+        
+    
+    h{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 100px;
+        font-family: Patsy Sans;
+        
+    }
+}
+    .news{
+        border: solid;
+        width: 100%;
+        min-height: 660px;
+        border-radius: 45px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        .developer{
+            margin-left: 16px;
+            margin-top: 16px;
+        }
+        h4{
+            float: right;
+            margin-right: 30px;
+        }
+    }
+    .rate{
+        ul{
+            display: flex;
+            gap:60px;
+            li{
+                display: flex;
+                p{
+                    margin-left: 10px;
+                    margin-top: 10px;
+                }
+                
+            }
+        }
+    }
+}

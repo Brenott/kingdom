@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: Patsy Sans;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Giger;
+  src: url(font/ofont.ru_Giger.ttf);
+}
+@font-face {
+  font-family: Patsy Sans;
+  src: url(font/ofont.ru_Patsy\ Sans.otf);
+}
+@font-face {
+  font-family: K2D;
+  src: url(font/K2D-Medium.ttf);
+}
+@font-face {
+  font-family: K2D Bold;
+  src: url(font/K2D-Bold.ttf);
+}
+@font-face {
+  font-family: K2D Italic;
+  src: url(font/K2D-Italic.ttf);
+}
+body {
+  font-family: "PT Serif", serif;
+  align-items: center;
+}
+body .box {
+  position: relative;
+  width: 380px;
+  height: 420px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+body .box form {
+  position: absolute;
+  inset: 4px;
+  background: #222;
+  padding: 50px 40px;
+  border-radius: 8px;
+  z-index: 2;
+  flex-direction: column;
+}
+body .box form .links {
+  display: flex;
+  justify-content: space-between;
+}
+body .box form .links a:hover, body .box form .links a:nth-child(2) {
+  color: #fff;
+}
+body .box form .links a {
+  margin: 10px 0;
+  font-size: 0.75em;
+  color: #8f8f8f;
+  text-decoration: none;
+}
+body .box form h2 {
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+body .box form input[type=submit] {
+  border: none;
+  outline: none;
+  padding: 9px 25px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9em;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 100px;
+  margin-top: 10px;
+}
+body .box form input[type=submit]:active {
+  opacity: 0.8;
+}
+body .box form .inputBox {
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
+}
+body .box form .inputBox input:valid ~ span,
+body .box form .inputBox input:focus ~ span {
+  color: #fff;
+  font-size: 0.75em;
+  transform: translateY(-34px);
+}
+body .box form .inputBox input:valid ~ i,
+body .box form .inputBox input:focus ~ i {
+  height: 44px;
+}
+body .box form .inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+body .box form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  pointer-events: none;
+  color: #8f8f8f;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+body .box form .inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
+}
+body .box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+body .box::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  width: calc(100% - 50px - 50px);
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  min-height: 270px;
+  align-items: center;
+}
+header .header-background {
+  background-image: url("photo/header.jpg");
+  width: 100%;
+  min-height: 115px;
+  display: flex;
+  align-items: center;
+}
+header .header-background .header-logo {
+  width: 70px;
+  height: 63px;
+}
+header .header-background .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+header .header-background .header-content .header-top {
+  font-family: Patsy Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  font-size: 40px;
+}
+header .header-background .header-content .header-top a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+header .header-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-bottom ul {
+  display: flex;
+  gap: 210px;
+}
+header .header-bottom ul li hr {
+  width: 35px;
+  transform: rotate(90deg);
+  padding-top: 15px;
+  border: none;
+  border-bottom: 2px solid #000;
+}
+header .header-bottom ul li a {
+  color: black;
+  text-decoration: none;
+  font-family: Patsy Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  font-size: 32px;
+}
+header .header-bottom ul li a button {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  background-color: #000;
+  border: none;
+}
+
+main .h1 {
+  text-align: center;
+  width: 100%;
+  height: 200px;
+}
+main .h1 h {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  font-family: Patsy Sans;
+}
+main .detail {
+  width: 100%;
+  height: 1800px;
+}
+main .detail section {
+  width: 100%;
+  height: 600px;
+}
+main .detail section .detail-right {
+  float: right;
+  width: 44%;
+}
+main .detail section .left {
+  max-width: 56%;
+  float: left;
+  border: solid;
+  box-shadow: 3px 3px 5px black;
+}
+main .detail section .detail-class .detail-class-down {
+  max-width: 498px;
+  height: 560px;
+}
+main .detail section .detail-class .detail-class-up {
+  display: flex;
+  text-align: right;
+}
+main .detail section .detail-class h1 {
+  font-style: normal;
+  font-family: Patsy Sans;
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 25px;
+}
+main .detail section .detail-class .right {
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: 8px;
+}
+main .detail section .detail-class p {
+  font-style: inherit;
+  font-family: Giger;
+  font-weight: 300px;
+  font-size: 25px;
+  height: 560px;
+  max-width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+  margin-left: 10px;
+}/*# sourceMappingURL=style.css.map */
